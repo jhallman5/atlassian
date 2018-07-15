@@ -1,13 +1,15 @@
 const createUnicorn = (id) => {
   let unicorn = document.createElement('div')
-  const width = 100
+  unicornImage = new Image()
+  unicornImage.src = 'https://upload.wikimedia.org/wikipedia/commons/7/70/Oftheunicorn.jpg'
+  unicorn.appendChild(unicornImage)
+  const width = 150
   unicorn.id = 'unicorn' + id
   unicorn.style.position = 'fixed'
   unicorn.style.zIndex = '9001'
   unicorn.style.top = ((window.innerHeight - width) / 2).toString() + 'px' // TODO
-  unicorn.style.backgroundColor = 'blue'
   unicorn.style.width = width.toString() +'px'
-  unicorn.style.height = '100px'
+  unicorn.style.height = '150px'
   document.body.appendChild(unicorn)
   return unicorn.id
 }
