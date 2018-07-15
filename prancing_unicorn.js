@@ -1,6 +1,6 @@
-const createUnicorn = () => {
+const createUnicorn = (id) => {
   let unicorn = document.createElement('div')
-  unicorn.id = 'unicorn'
+  unicorn.id = 'unicorn' + id
   unicorn.style.position = 'absolute'
   unicorn.style.zIndex = '9001'
   unicorn.style.top = (window.innerHeight / 2).toString() + 'px' // TODO
@@ -8,6 +8,7 @@ const createUnicorn = () => {
   unicorn.style.width = '100px'
   unicorn.style.height = '100px'
   document.body.appendChild(unicorn)
+  return unicorn.id
 }
 
 document.addEventListener('keypress', (key) => {
@@ -15,8 +16,7 @@ document.addEventListener('keypress', (key) => {
 })
 
 function prance(){
-  createUnicorn()
-  const unicorn = document.getElementById('unicorn')
+  const unicorn = document.getElementById(createUnicorn(determineUnicornId()))
   styleWidth = unicorn.offsetWidth
   unicorn.style.left = (-styleWidth).toString() + 'px'
   const speed = 1
@@ -58,4 +58,12 @@ function rotateImage(image, direction){
     rotationValue--
   }
   image.style.webkitTransform = 'rotate(' + rotationValue + 'deg)'
+}
+
+function determineUnicornId(){
+  let id = 0
+  while (document.getElementById('unicorn' + id)){
+    id++
+  }
+  return id
 }

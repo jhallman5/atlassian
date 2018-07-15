@@ -10,4 +10,7 @@ You should send us your Javascript code in text.  We will take your text of your
   * INSERT A UNICORN IMAGE.
   * Adjust top margin to align with the center of the window.
   * Keep the div in the center of the view port when when scrolling.
-  * Update event handler to handle more than one event.
+
+### Improvements:
+  * I really feel like a class should be used for createUnicorn.
+  * Performance issues occur when theres a lot of unicorn images on screen. 
