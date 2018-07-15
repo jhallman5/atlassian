@@ -8,9 +8,8 @@ You should send us your Javascript code in text.  We will take your text of your
 
 ### TODOS:
   * INSERT A UNICORN IMAGE.
-  * Adjust top margin to align with the center of the window.
-  * Keep the div in the center of the view port when when scrolling.
 
 ### Improvements:
   * I really feel like a class should be used for createUnicorn.
-  * Performance issues occur when theres a lot of unicorn images on screen. 
+  * Performance issues occur when theres a lot of unicorn images on screen.
+  * Use of an object to set styles?

@@ -1,11 +1,12 @@
 const createUnicorn = (id) => {
   let unicorn = document.createElement('div')
+  const width = 100
   unicorn.id = 'unicorn' + id
-  unicorn.style.position = 'absolute'
+  unicorn.style.position = 'fixed'
   unicorn.style.zIndex = '9001'
-  unicorn.style.top = (window.innerHeight / 2).toString() + 'px' // TODO
+  unicorn.style.top = ((window.innerHeight - width) / 2).toString() + 'px' // TODO
   unicorn.style.backgroundColor = 'blue'
-  unicorn.style.width = '100px'
+  unicorn.style.width = width.toString() +'px'
   unicorn.style.height = '100px'
   document.body.appendChild(unicorn)
   return unicorn.id
