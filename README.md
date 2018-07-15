@@ -11,5 +11,4 @@ You should send us your Javascript code in text.  We will take your text of your
   * Adjust top margin to align with the center of the window.
   * Keep the div in the center of the view port when when scrolling.
   * Update event handler to handle more than one event.
-  * Clean up the dom once the div leaves the view port.
   * Add rotation / pivot to make the image look like its dancing.
