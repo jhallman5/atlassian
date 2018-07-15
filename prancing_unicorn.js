@@ -7,8 +7,11 @@ unicorn.style.left = '0px'
 unicorn.style.backgroundColor = 'blue'
 unicorn.style.width = '100px'
 unicorn.style.height = '100px'
-unicorn.addEventListener('click', prance)
 document.body.appendChild(unicorn)
+
+document.addEventListener('keypress', (key) => {
+  if(key.keyCode == '117' || '85') prance()
+})
 
 function prance(){
   let unicron = document.getElementById('unicorn')
