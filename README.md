@@ -21,7 +21,16 @@ Create a script (runnable in the browser console) that can “spoof” the propo
 
 ### TODOS
   * Determine which version increases sign ups
-  * Write my opinion on this test
+  * Ensure first and last names are present.
 
 ### Improvements
   * Instead of modifying the first name div, a brand new div should be created. Perhaps out of scope for this assignment, but would likely do this in production.
+
+
+### My Opinion on Form Field Fandango
+  I actually think our time could be better spent on other projects for several reasons.
+  1. Many browsers have an auto fill feature that is used to fill out similar forms. This feature could not only negate any possible gain, but could result in negative experience as the auto fill could inaccurately fill in information or omit a portion of the user's full name.
+  2. By the time we get the user to the sign up page, I do not think filling out these cells would be a deterrent. This could change if we were having them fill out more fields, but in the current state I do not believe this would be an impactful change.
+  3. We likely already made the sale prior to this point as they have already seen the pricing and chosen an option. Our main goals on this page are to maintain ease and appeal. Although this change can potentially make signing up easier. I think efforts are better spent increasing appeal by making other UI changes.
+
+Of course these are my opinions and if the team decides to proceed with this test we will still gather very useful data. We don't *really* know if this will have an effect on user signups until we conduct the test. I  would just likely advocate for another test of potentially higher value.
