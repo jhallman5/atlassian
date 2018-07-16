@@ -21,11 +21,12 @@ Create a script (runnable in the browser console) that can “spoof” the propo
 
 ### TODOS
   * Determine which version increases sign ups
-  * Allow form Validation
+  * client side form validation
 
 ### Improvements
   * Instead of modifying the first name div, a brand new div should be created. Perhaps out of scope for this assignment, but would likely do this in production.
   * Probably don't need to query the DOM so many times
+  * Probably want to use event delegation
 
 ### My Opinion on Form Field Fandango
   I actually think our time could be better spent on other projects for several reasons.
