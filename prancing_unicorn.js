@@ -11,15 +11,16 @@ const createUnicorn = (id) => {
   unicorn.style.width = width.toString() +'px'
   unicorn.style.height = '150px'
   document.body.appendChild(unicorn)
-  return unicorn.id
 }
 
-document.addEventListener('keypress', (key) => {
-  if(key.keyCode == '117' || '85') prance()
+document.addEventListener('keypress', (event) => {
+  if(event.key.toLowerCase() === 'u') prance()
 })
 
 function prance(){
-  const unicorn = document.getElementById(createUnicorn(determineUnicornId()))
+  const unicornID = determineUnicornId()
+  createUnicorn(unicornID)
+  const unicorn = document.getElementById('unicorn' + unicornID)
   styleWidth = unicorn.offsetWidth
   unicorn.style.left = (-styleWidth).toString() + 'px'
   const speed = 1
