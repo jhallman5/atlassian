@@ -52,20 +52,14 @@ function setRotationDirection(image, direction){
   }
 }
 
-function rotateImage(image, direction){
+const rotateImage = (image, direction) => {
   let rotationValue = parseInt(image.style.webkitTransform.split('(')[1].split('d')[0])
-  if(direction == 'clockwise'){
-    rotationValue++
-  }else{
-    rotationValue--
-  }
+  rotationValue = (direction == 'clockwise') ? ++rotationValue : --rotationValue
   image.style.webkitTransform = 'rotate(' + rotationValue + 'deg)'
 }
 
-function determineUnicornId(){
+const determineUnicornId = () => {
   let id = 0
-  while (document.getElementById('unicorn' + id)){
-    id++
-  }
+  while(document.getElementById('unicorn' + id)) id++
   return id
 }
