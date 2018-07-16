@@ -2,12 +2,9 @@ document.addEventListener('keypress', (event) => {
   if(event.key.toLowerCase() === 'u') prance()
 })
 
+// Creates a div with a unicorn image that moves across the screen while rotating +/- 20.
 const prance = () => {
-  const unicornID = determineUnicornId()
-  createUnicorn(unicornID)
-  const unicorn = document.getElementById('unicorn' + unicornID)
-  const unicornWidth = unicorn.style.width.split('px')[0]
-  unicorn.style.left = (-unicornWidth).toString() + 'px'
+  const unicorn = createUnicorn(determineUnicornId())
   const speed = 1
   let rotationDirection = 'clockwise'
   const interval = setInterval(function(){
@@ -22,24 +19,30 @@ const prance = () => {
     unicorn.style.left = styleLeft.toString() + 'px'
     rotationDirection = setRotationDirection(unicorn, rotationDirection)
     rotateImage(unicorn,rotationDirection)
-  }, 3)
+  }, 10)
 }
 
 // Helper Functions
 const createUnicorn = (id) => {
-  let unicorn = document.createElement('div')
+  const UnicornStyles = {
+    position: 'fixed',
+    zIndex: '9001',
+    webkitTransform: 'rotate(0deg)'
+  }
+  const height = 150
   const width = 150
+  let unicorn = document.createElement('div')
+  Object.assign(unicorn.style, UnicornStyles)
   unicorn.id = 'unicorn' + id
-  unicorn.style.position = 'fixed'
-  unicorn.style.zIndex = '9001'
-  unicorn.style.top = ((window.innerHeight - width) / 2).toString() + 'px'
-  unicorn.style.width = width.toString() +'px'
-  unicorn.style.height = '150px'
-  unicorn.style.webkitTransform = 'rotate(0deg)'
+  unicorn.style.left = (-width).toString() + 'px'
+  unicorn.style.top = ((window.innerHeight - height) / 2).toString() + 'px'
+  unicorn.style.width = width.toString() + 'px'
+  unicorn.style.height = height.toString() + 'px'
   unicornImage = new Image()
   unicornImage.src = 'https://upload.wikimedia.org/wikipedia/commons/7/70/Oftheunicorn.jpg'
   unicorn.appendChild(unicornImage)
   document.body.appendChild(unicorn)
+  return unicorn
 }
 
 const determineUnicornId = () => {
