@@ -7,9 +7,10 @@ const createUnicorn = (id) => {
   unicorn.id = 'unicorn' + id
   unicorn.style.position = 'fixed'
   unicorn.style.zIndex = '9001'
-  unicorn.style.top = ((window.innerHeight - width) / 2).toString() + 'px' // TODO
+  unicorn.style.top = ((window.innerHeight - width) / 2).toString() + 'px'
   unicorn.style.width = width.toString() +'px'
   unicorn.style.height = '150px'
+  unicorn.style.webkitTransform = 'rotate(0deg)'
   document.body.appendChild(unicorn)
 }
 
@@ -41,9 +42,6 @@ function prance(){
 }
 
 function setRotationDirection(image, direction){
-  if(!image.style.webkitTransform){
-    image.style.webkitTransform = 'rotate(0deg)'
-  }
   let rotationValue = parseInt(image.style.webkitTransform.split('(')[1].split('d')[0])
   if(rotationValue == 20){
     return 'counter clockwise'
