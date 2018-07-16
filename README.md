@@ -21,7 +21,7 @@ Create a script (runnable in the browser console) that can “spoof” the propo
 
 ### TODOS
   * Determine which version increases sign ups
-  * Ensure first and last names are present.
+  * Remove styling after matching fullname Regex  
 
 ### Improvements
   * Instead of modifying the first name div, a brand new div should be created. Perhaps out of scope for this assignment, but would likely do this in production.
