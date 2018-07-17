@@ -7,7 +7,7 @@ Your task is make an easter egg, (https://en.wikipedia.org/wiki/Easter_egg_(medi
 You should send us your Javascript code in text.  We will take your text of your code and paste it into the Chrome Javascript Developer Console (https://developers.google.com/web/tools/chrome-devtools/console/ ) and hit enter.  
 
 ### Improvements:
-  * Search page for other z-index values and ensure mine is on top.
+  * Search page for other z-index values and to ensure mine is higher.
 
 ## Form Field Fandango
 
@@ -17,11 +17,11 @@ Go to https://www.atlassian.com/ondemand/signup/form?product=jira-software.ondem
 Create a script (runnable in the browser console) that can “spoof” the proposed signup form above that can prove or disprove your hypothesis. Feel free to share your own opinion as to whether this would be a valuable test to run and explain why or why not.
 
 ### TODOS
-  * Form Validation
+  * Determine where to put validity check
 
 ### Improvements
   * Instead of modifying the first name div, a brand new div should be created. Perhaps out of scope for this assignment, but would likely do this in production.
-  * Probably don't need to query the DOM so many times
+  * Add a green checkmark to the full name input.
 
 ### My Opinion on Form Field Fandango
   I actually think our time could be better spent on other projects for several reasons.
