@@ -26,7 +26,7 @@ FullNameInput.addEventListener('blur', (event) => {
 
 // Updates Error Message
 const fullNameErrorSpan = document.querySelector('p[ng-show="signupForm.firstName.$invalid"] span')
-fullNameErrorSpan.textContent = 'Please enter your full name spearated by a space'
+fullNameErrorSpan.textContent = 'Please enter your full name separated by a space'
 
 // Prevents default form submission
 const submitButton = document.querySelector('.wac-button')
