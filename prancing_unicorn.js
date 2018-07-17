@@ -2,7 +2,7 @@ document.addEventListener('keypress', (event) => {
   if(event.key.toLowerCase() === 'u') prance()
 })
 
-// Creates a div with a unicorn image that moves across the screen while rotating +/- 20deg.
+// Creates a div with an image that moves left to right while rotating +/- 20deg.
 const prance = () => {
   const unicorn = createUnicorn()
   const speed = 1
@@ -23,7 +23,7 @@ const prance = () => {
 }
 
 // Helper Functions
-/* I did styles this way to keep attributes that arent changing together
+/* I did the styles this way to keep attributes that arent changing together
  while potentially allowing the factory function to control size. */
 const createUnicorn = () => {
   const UnicornStyles = {
