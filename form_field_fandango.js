@@ -24,7 +24,7 @@ FullNameInput.addEventListener('blur', (event) => {
   }
 })
 
-// Updates Error Message
+// Updates fullName Error Message
 const fullNameErrorSpan = document.querySelector('p[ng-show="signupForm.firstName.$invalid"] span')
 fullNameErrorSpan.textContent = 'Please enter your full name separated by a space'
 
@@ -40,8 +40,9 @@ submitButton.addEventListener('click', (event) => {
 const checkFormValidity = () => {
   let validity = true
   document.querySelectorAll('.cloud-signup-col2 input').forEach(input => {
+    if(input.getAttribute('type') == 'checkbox') return
     const invalid = input.getAttribute('class').split(' ').includes('ng-invalid')
-    if(!input.value) validity = false
+    if(input.value.length == 0) validity = false
     if(invalid) validity = false
   })
   if(validity){
@@ -50,3 +51,8 @@ const checkFormValidity = () => {
     submitButton.setAttribute('disabled','disabled')
   }
 }
+
+// Used Event capturing due to using a blur event handler
+document.querySelector('.cloud-signup-col2 section').addEventListener('blur', event => {
+  checkFormValidity()
+},true)
