@@ -1,0 +1,24 @@
+Hypothesis:
+From https://www.atlassian.com/, too many redirects can be a deterrent/overwhelming when shopping for a project management tool.
+
+Proposed Solution:
+Create a more direct path to the Jira signup page.
+
+The Plan:
+Create a button directly on top of 'Get started for free' with the text 'Go agile with Jira for free'.
+The href should point to https://www.atlassian.com/software/jira/try
+Update 'Get started for free' button's text to 'or checkout our other products'.
+
+Main Metrics:
+  * How many users end up buying Jira compared to the original layout
+
+Side Metrics:
+  * How many users end up buying ANY software.
+  * How quickly do they sign up.
+  * URL route taken for successful / unsuccessful sales ( which pages did they visit and what were the results ).
+
+Experiment Variation:
+  Send out the above to 10% of users
+  Remove the 'or checkout our other products' button, send out to 10% of users
+  Keep 80% of visitor experiences the same until we can analyze some data.
+  Run for 2 weeks

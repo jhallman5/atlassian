@@ -35,3 +35,8 @@ Create a script (runnable in the browser console) that can “spoof” the propo
   3. We likely already made the sale prior to this point as they have already seen the pricing and chosen an option. Our main goals on this page are to maintain ease and appeal. Although this change can potentially make signing up easier. I think efforts are better spent increasing appeal by making other UI changes.
 
 Of course these are my opinions and if the team decides to proceed with this test we will still gather very useful data. We don't *really* know if this will have an effect on user signups until we conduct the test. I  would just likely advocate for another test of potentially higher value.
+
+## Open-ended Experimentation
+
+### Spec:
+Check out the flow to sign up for JIRA Software from atlassian.com. Think of some ideas on how you could improve the signup flow and come up with one experiment idea. Define the hypothesis, the experiment variation, and what goals/metrics you would use to measure the experiment. Provide the code that we could run in the console to see your experiment
