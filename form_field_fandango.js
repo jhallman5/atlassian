@@ -52,7 +52,14 @@ const checkFormValidity = () => {
   }
 }
 
+// A sleep timer is needed for form validation
+const sleep = (time) => {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 // Used Event capturing due to using a blur event handler
 document.querySelector('.cloud-signup-col2 section').addEventListener('blur', event => {
-  checkFormValidity()
+  sleep(50).then(() => {
+    checkFormValidity()
+  });
 },true)
