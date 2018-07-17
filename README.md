@@ -17,13 +17,11 @@ Go to https://www.atlassian.com/ondemand/signup/form?product=jira-software.ondem
 Create a script (runnable in the browser console) that can “spoof” the proposed signup form above that can prove or disprove your hypothesis. Feel free to share your own opinion as to whether this would be a valuable test to run and explain why or why not.
 
 ### TODOS
-  * Determine which version increases sign ups
-  * client side form validation
+  * Form Validation
 
 ### Improvements
   * Instead of modifying the first name div, a brand new div should be created. Perhaps out of scope for this assignment, but would likely do this in production.
   * Probably don't need to query the DOM so many times
-  * Probably want to use event delegation
 
 ### My Opinion on Form Field Fandango
   I actually think our time could be better spent on other projects for several reasons.
