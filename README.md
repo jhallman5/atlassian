@@ -7,10 +7,7 @@ Your task is make an easter egg, (https://en.wikipedia.org/wiki/Easter_egg_(medi
 You should send us your Javascript code in text.  We will take your text of your code and paste it into the Chrome Javascript Developer Console (https://developers.google.com/web/tools/chrome-devtools/console/ ) and hit enter.  
 
 ### Improvements:
-  * Performance issues occur when theres a lot of unicorn images on screen.
-  * Might want to use an object to set styles
   * Search page for other z-index values and ensure mine is on top.
-  * General clean up
 
 ## Form Field Fandango
 
