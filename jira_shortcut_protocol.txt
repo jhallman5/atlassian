@@ -7,7 +7,9 @@ Create a more direct path to the Jira signup page.
 The Plan:
 Create a button directly on top of 'Get started for free' with the text 'Go agile with Jira for free'.
 The href should point to https://www.atlassian.com/software/jira/try
-Update 'Get started for free' button's text to 'or checkout our other products'.
+Update 'Get started for free' button's text to 'Learn about our other products'.
+Update 'Learn about our other products' button's class to reflect a "learn more" button.
+
 
 Main Metrics:
   * How many users end up buying Jira compared to the original layout
